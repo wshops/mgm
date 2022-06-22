@@ -1,7 +1,4 @@
-<p align="center">
-<img width="250" src="https://user-images.githubusercontent.com/22454054/71487214-759cb680-282f-11ea-9bcf-caa663b3e348.png" />
-</p>
-
+# Mongo Go Models 
 
 <p align="center">
   <a href="https://goreportcard.com/report/github.com/Kamva/mgm">
@@ -17,9 +14,6 @@
     <img src="https://codecov.io/gh/Kamva/mgm/branch/master/graph/badge.svg" />
   </a>
 </p>
-  
-
-# Mongo Go Models 
 
 The Mongo ODM for Go
 
@@ -395,31 +389,8 @@ _, _ = mgm.Coll(&Book{}).Aggregate(mgm.Ctx(), bson.A{
     bson.M{o.Project: bson.M{f.Id: 0}},
 })
  ```
- 
-## Bugs / Feature request
-New features can be requested and bugs can be reported on [Github issue tracker](https://github.com/Kamva/mgm/issues).
 
-## Communicate With Us
+## License & Credits
 
-* Create new topic at [mongo-go-models Google Group](https://groups.google.com/forum/#!forum/mongo-go-models)  
-* Ask your question or request new feature by creating an issue at [Github issue tracker](https://github.com/Kamva/mgm/issues)  
-
-## Contributing 
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/kamva/mgm)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FKamva%2Fmgm.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FKamva%2Fmgm?ref=badge_shield)
-
-1. Fork the repository
-1. Clone your fork (`git clone https://github.com/<your_username>/mgm && cd mgm`)
-1. Create your feature branch (`git checkout -b my-new-feature`)
-1. Make changes and add them (`git add .`)
-1. Commit your changes (`git commit -m 'Add some feature'`)
-1. Push to the branch (`git push origin my-new-feature`)
-1. Create new pull request
-
-## License
-
-Mongo Go Models is released under the [Apache License](https://github.com/Kamva/mgm/blob/master/LICENSE)
-
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FKamva%2Fmgm.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FKamva%2Fmgm?ref=badge_large)
+- MGM is originally from https://github.com/Kamva/mgm
+- Mongo Go Models is released under the [Apache License](https://github.com/Kamva/mgm/blob/master/LICENSE)
