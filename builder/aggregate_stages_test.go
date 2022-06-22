@@ -1,10 +1,10 @@
 package builder_test
 
 import (
-	"git.jetbrains.space/wshops/wshops/mgm/builder"
-	"git.jetbrains.space/wshops/wshops/mgm/field"
-	"git.jetbrains.space/wshops/wshops/mgm/operator"
 	"github.com/stretchr/testify/require"
+	"github.com/wshops/mgm/builder"
+	"github.com/wshops/mgm/field"
+	"github.com/wshops/mgm/operator"
 	"go.mongodb.org/mongo-driver/bson"
 	"testing"
 )

@@ -1,7 +1,7 @@
 package crud
 
 import (
-	"git.jetbrains.space/wshops/wshops/mgm"
+	"github.com/wshops/mgm"
 )
 
 type book struct {

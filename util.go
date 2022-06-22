@@ -1,8 +1,8 @@
 package mgm
 
 import (
-	"git.jetbrains.space/wshops/wshops/mgm/internal/util"
 	"github.com/jinzhu/inflection"
+	"github.com/wshops/mgm/internal/util"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"reflect"
 )

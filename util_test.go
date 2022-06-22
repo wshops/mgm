@@ -1,9 +1,9 @@
 package mgm_test
 
 import (
-	"git.jetbrains.space/wshops/wshops/mgm"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/wshops/mgm"
 	"testing"
 )
 

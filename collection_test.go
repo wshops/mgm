@@ -1,12 +1,12 @@
 package mgm_test
 
 import (
-	"git.jetbrains.space/wshops/wshops/mgm"
-	"git.jetbrains.space/wshops/wshops/mgm/builder"
-	"git.jetbrains.space/wshops/wshops/mgm/internal/util"
-	"git.jetbrains.space/wshops/wshops/mgm/operator"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/wshops/mgm"
+	"github.com/wshops/mgm/builder"
+	"github.com/wshops/mgm/internal/util"
+	"github.com/wshops/mgm/operator"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"testing"

@@ -1,6 +1,6 @@
 package crud
 
-import "git.jetbrains.space/wshops/wshops/mgm"
+import "github.com/wshops/mgm"
 
 func crud() error {
 

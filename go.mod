@@ -1,4 +1,4 @@
-module git.jetbrains.space/wshops/wshops/mgm
+module github.com/wshops/mgm
 
 go 1.18
 

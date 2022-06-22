@@ -1,7 +1,7 @@
 package crud
 
 import (
-	"git.jetbrains.space/wshops/wshops/mgm"
+	"github.com/wshops/mgm"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 

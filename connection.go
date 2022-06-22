@@ -3,7 +3,7 @@ package mgm
 import (
 	"context"
 	"errors"
-	"git.jetbrains.space/wshops/wshops/mgm/internal/util"
+	"github.com/wshops/mgm/internal/util"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"time"

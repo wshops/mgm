@@ -1,9 +1,9 @@
 package aggregate
 
 import (
-	"git.jetbrains.space/wshops/wshops/mgm"
-	"git.jetbrains.space/wshops/wshops/mgm/builder"
-	"git.jetbrains.space/wshops/wshops/mgm/field"
+	"github.com/wshops/mgm"
+	"github.com/wshops/mgm/builder"
+	"github.com/wshops/mgm/field"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

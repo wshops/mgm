@@ -3,10 +3,10 @@ package mgm_test
 import (
 	"context"
 	"errors"
-	"git.jetbrains.space/wshops/wshops/mgm"
-	"git.jetbrains.space/wshops/wshops/mgm/internal/util"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
+	"github.com/wshops/mgm"
+	"github.com/wshops/mgm/internal/util"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"testing"

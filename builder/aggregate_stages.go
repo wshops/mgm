@@ -1,8 +1,8 @@
 package builder
 
 import (
-	f "git.jetbrains.space/wshops/wshops/mgm/field"
-	o "git.jetbrains.space/wshops/wshops/mgm/operator"
+	f "github.com/wshops/mgm/field"
+	o "github.com/wshops/mgm/operator"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

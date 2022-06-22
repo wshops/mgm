@@ -46,7 +46,7 @@ The Mongo ODM for Go
 ## Installation
 
 ```bash
-go get git.jetbrains.space/wshops/wshops/mgm
+go get github.com/wshops/mgm
 ```
 
 
@@ -54,7 +54,7 @@ go get git.jetbrains.space/wshops/wshops/mgm
 To get started, import the `mgm` package and setup the default config:
 ```go
 import (
-   "git.jetbrains.space/wshops/wshops/mgm"
+   "github.com/wshops/mgm"
    "go.mongodb.org/mongo-driver/mongo/options"
 )
 
@@ -297,9 +297,9 @@ _ := mgm.Coll(&Book{}).SimpleAggregate(&result,
 Do aggregations using the mongo Aggregation method:
 ```go
 import (
-   "git.jetbrains.space/wshops/wshops/mgm"
-   "git.jetbrains.space/wshops/wshops/mgm/builder"
-   "git.jetbrains.space/wshops/wshops/mgm/field"
+   "github.com/wshops/mgm"
+   "github.com/wshops/mgm/builder"
+   "github.com/wshops/mgm/field"
    . "go.mongodb.org/mongo-driver/bson"
    "go.mongodb.org/mongo-driver/bson/primitive"
 )
@@ -316,10 +316,10 @@ cur, err := mgm.Coll(&Book{}).Aggregate(mgm.Ctx(), A{
 A more complex example and mixes with mongo raw pipelines:
 ```go
 import (
-   "git.jetbrains.space/wshops/wshops/mgm"
-   "git.jetbrains.space/wshops/wshops/mgm/builder"
-   "git.jetbrains.space/wshops/wshops/mgm/field"
-   "git.jetbrains.space/wshops/wshops/mgm/operator"
+   "github.com/wshops/mgm"
+   "github.com/wshops/mgm/builder"
+   "github.com/wshops/mgm/field"
+   "github.com/wshops/mgm/operator"
    . "go.mongodb.org/mongo-driver/bson"
    "go.mongodb.org/mongo-driver/bson/primitive"
 )
@@ -377,9 +377,9 @@ err := mgm.Transaction(func(session mongo.Session, sc mongo.SessionContext) erro
 Example:
  ```go
 import (
-   "git.jetbrains.space/wshops/wshops/mgm"
-   f "git.jetbrains.space/wshops/wshops/mgm/field"
-   o "git.jetbrains.space/wshops/wshops/mgm/operator"
+   "github.com/wshops/mgm"
+   f "github.com/wshops/mgm/field"
+   o "github.com/wshops/mgm/operator"
    "go.mongodb.org/mongo-driver/bson"
 )
 

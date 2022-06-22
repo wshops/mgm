@@ -1,9 +1,9 @@
 package mgm_test
 
 import (
-	"git.jetbrains.space/wshops/wshops/mgm"
-	"git.jetbrains.space/wshops/wshops/mgm/internal/util"
 	"github.com/stretchr/testify/require"
+	"github.com/wshops/mgm"
+	"github.com/wshops/mgm/internal/util"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.mongodb.org/mongo-driver/mongo/readpref"
 	"testing"
