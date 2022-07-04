@@ -174,7 +174,7 @@ func TestReturnErrorInUpdatingHook(t *testing.T) {
 
 	// Expected do not update this model:
 	oldPerson := &Person{}
-	util.PanicErr(mgm.Coll(person).FindByID(person.ID, oldPerson))
+	util.PanicErr(mgm.Coll(person).FindByID(person.ObjectId, oldPerson))
 	require.Equal(t, oldName, oldPerson.Name, "Expected person's name be %s name, but is %s", oldName, person.Name)
 }
 
@@ -199,7 +199,7 @@ func TestUpdatingDocHooks(t *testing.T) {
 
 	// Expected do not update this model:
 	newPerson := &Person{}
-	util.PanicErr(mgm.Coll(person).FindByID(person.ID, newPerson))
+	util.PanicErr(mgm.Coll(person).FindByID(person.ObjectId, newPerson))
 	require.Equal(t, newName, newPerson.Name, "Expected person's name be %s , but is %s", newName, person.Name)
 }
 
@@ -412,7 +412,7 @@ func TestReturnErrorInUpdatingHook_Celebrity(t *testing.T) {
 
 	// Expected do not update this model:
 	oldPerson := &Person{}
-	util.PanicErr(mgm.Coll(celebrity).FindByID(celebrity.ID, oldPerson))
+	util.PanicErr(mgm.Coll(celebrity).FindByID(celebrity.ObjectId, oldPerson))
 	require.Equal(t, oldName, oldPerson.Name, "Expected celebrity's name be %s name, but is %s", oldName, celebrity.Name)
 }
 
@@ -439,7 +439,7 @@ func TestUpdatingDocHooks_Celebrity(t *testing.T) {
 
 	// Expected do not update this model:
 	newCelebrity := &Celebrity{}
-	util.PanicErr(mgm.Coll(celebrity).FindByID(celebrity.ID, newCelebrity))
+	util.PanicErr(mgm.Coll(celebrity).FindByID(celebrity.ObjectId, newCelebrity))
 	require.Equal(t, newName, newCelebrity.Name, "Expected celebrity's name be %s , but is %s", newName, celebrity.Name)
 }
 

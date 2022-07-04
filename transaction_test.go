@@ -6,13 +6,18 @@ import (
 	"github.com/wshops/mgm/internal/util"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 	"testing"
 )
+
+const mongo_uri = ""
 
 // Note: to run Transaction tests, the MongoDB daemon must run as replica set, not as a standalone daemon.
 // To convert it [see this](https://docs.mongodb.com/manual/tutorial/convert-standalone-to-replica-set/)
 func TestTransactionCommit(t *testing.T) {
-	setupDefConnection()
+	util.PanicErr(
+		mgm.SetDefaultConfig(nil, "models", options.Client().ApplyURI(mongo_uri)),
+	)
 	resetCollection()
 
 	d := &Doc{Name: "check", Age: 10}
@@ -36,7 +41,9 @@ func TestTransactionCommit(t *testing.T) {
 }
 
 func TestTransactionAbort(t *testing.T) {
-	setupDefConnection()
+	util.PanicErr(
+		mgm.SetDefaultConfig(nil, "models", options.Client().ApplyURI(mongo_uri)),
+	)
 	resetCollection()
 	//seed()
 
@@ -61,7 +68,9 @@ func TestTransactionAbort(t *testing.T) {
 }
 
 func TestTransactionWithCtx(t *testing.T) {
-	setupDefConnection()
+	util.PanicErr(
+		mgm.SetDefaultConfig(nil, "models", options.Client().ApplyURI(mongo_uri)),
+	)
 	resetCollection()
 	//seed()
 
