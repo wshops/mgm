@@ -35,7 +35,7 @@ type Model interface {
 // DefaultModel struct contains a model's default fields.
 type DefaultModel struct {
 	ObjectId  primitive.ObjectID `json:"-" bson:"_id,omitempty" msg:"-"`
-	Id        string             `json:"id" bson:"-" msg:"id"`
+	Id        string             `json:"id" bson:"id_hex" msg:"id"`
 	CreatedAt int64              `json:"create_time" bson:"create_time" msg:"create_time"`
 	UpdatedAt int64              `json:"last_modify_time" bson:"last_modify_time" msg:"last_modify_time"`
 }
