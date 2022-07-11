@@ -34,8 +34,8 @@ type Model interface {
 //go:generate msgp
 // DefaultModel struct contains a model's default fields.
 type DefaultModel struct {
-	ObjectId  primitive.ObjectID `json:"-" bson:"_id,omitempty" msg:"-"`
-	Id        string             `json:"id" bson:"id_hex" msg:"id"`
+	ObjectId  primitive.ObjectID `json:"id" bson:"_id,omitempty" msg:"-"`
+	Id        string             `json:"-" bson:"-" msg:"id"`
 	CreatedAt int64              `json:"create_time" bson:"create_time" msg:"create_time"`
 	UpdatedAt int64              `json:"last_modify_time" bson:"last_modify_time" msg:"last_modify_time"`
 }
@@ -71,11 +71,11 @@ func (model *DefaultModel) GetID() primitive.ObjectID {
 
 // GetIdStr method returns a model's ID
 func (model *DefaultModel) GetIdStr() string {
-	return model.Id
+	return model.ObjectId.Hex()
 }
 
 // SetID sets the value of a model's ID field.
 func (model *DefaultModel) SetID(id any) {
 	model.ObjectId = id.(primitive.ObjectID)
-	model.Id = id.(primitive.ObjectID).Hex()
+	model.Id = model.ObjectId.Hex()
 }
